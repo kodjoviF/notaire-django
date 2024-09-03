@@ -1,0 +1,596 @@
+{% extends "chambre/base.html" %}
+{% load static %}
+
+
+{% block title %}Accueil - Chambre des Notaires du Togo{% endblock %}
+
+{% block content %}
+
+<header class=" py-5">
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center justify-content-center">
+            <div class="col-lg-8 col-xl-7 col-xxl-6">
+                <div class="my-5 text-center text-xl-start">
+                    <h3 class="display-5 fw-bolder  mb-2">Bienvenue à la chambre du commerce du Togo</h3>
+                    <!-- <p class="lead fw-normal  mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit!</p> -->
+                    <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
+                        <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Contact</a>
+                        <a class="btn btn-outline-primary btn-lg px-4" href="#!">Voir membres</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5" src="https://dummyimage.com/600x400/343a40/6c757d" alt="..." /></div>
+        </div>
+    </div>
+</header>
+<!-- Carousel End -->
+
+ 
+</div>
+<!-- Navbar & Hero End -->
+
+ <!-- About Start -->
+ <div class="container-fluid about bg-light py-5">
+    <div class="container py-5">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-5 wow fadeInLeft" data-wow-delay="0.2s">
+          <div class="about-img pb-5 ps-5">
+            <img
+              src="{% static 'images/juge1.jpg' %}"
+              class="img-fluid rounded w-100"
+              style="object-fit: cover"
+              alt="Image"
+            />
+           
+          </div>
+        </div>
+        <div class="col-lg-7 wow fadeInRight" data-wow-delay="0.4s">
+          <div class="section-title text-start mb-5">
+            <h4 class="sub-title pe-3 mb-0">A propos</h4>
+            <h1 class="display-3 mb-4">
+             Chambre
+            </h1>
+            <p class="mb-4">
+                La Chambre des notaires est l’ordre professionnel qui encadre et régit la pratique notariale sur le territoire de la République Togolaise.Elle joue un role essentiel dans la protection du public et la promotion de l'exercice préventif du droit
+
+            </p>
+            <div class="mb-4">
+              <p class="text-secondary">
+                <i class="fa fa-check text-primary me-2"></i> Refresing to get
+                such a personal touch.
+              </p>
+              <p class="text-secondary">
+                <i class="fa fa-check text-primary me-2"></i> Duis aute irure
+                dolor in reprehenderit in voluptate.
+              </p>
+              <p class="text-secondary">
+                <i class="fa fa-check text-primary me-2"></i> Velit esse
+                cillum dolore eu fugiat nulla pariatur.
+              </p>
+            </div>
+            <a
+              href="#"
+              class="btn btn-primary rounded-pill text-white py-3 px-5"
+              >Chercher</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- About End -->
+
+<!-- Services Start -->
+<div class="container-fluid service py-5">
+  <div class="container py-5">
+    <div class="section-title mb-5 wow fadeInUp" data-wow-delay="0.2s">
+      <div class="sub-style">
+        <h4 class="sub-title px-3 mb-0">Nos services</h4>
+      </div>
+      <h1 class="display-3 mb-4">
+        Nous vous garantissons la recherche des Procurations et Testaments
+      </h1>
+      <p class="mb-0">
+        Le notaire, en tant qu’officier public et ministériel, occupe une place centrale dans le domaine juridique. Sa mission consiste à authentifier les actes en apposant son sceau et sa signature, conférant ainsi à ces documents une valeur probante.
+      </p>
+    </div>
+    <div class="row g-4 justify-content-center">
+      <div
+        class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp"
+        data-wow-delay="0.1s"
+      >
+        <div class="service-item rounded">
+          <div class="service-img rounded-top">
+            <img
+              src="{% static 'images/service.jpg'%}"
+              class="img-fluid rounded-top w-100"
+              alt=""
+            />
+          </div>
+          <div class="service-content rounded-bottom bg-light p-4">
+            <div class="service-content-inner">
+              <h5 class="mb-4">Rédaction d’Actes notariale </h5>
+              <p class="mb-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis beatae perspiciatis distinctio praesentium quaerat doloremque accusamus atque. Voluptas, tenetur facere.
+              </p>
+              <a
+                href="#"
+                class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2"
+                >lire plus</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp"
+        data-wow-delay="0.3s"
+      >
+        <div class="service-item rounded">
+          <div class="service-img rounded-top">
+            <img
+              src="{% static 'images/service.jpg'%}"
+              class="img-fluid rounded-top w-100"
+              alt=""
+            />
+          </div>
+          <div class="service-content rounded-bottom bg-light p-4">
+            <div class="service-content-inner">
+              <h5 class="mb-4">Règlement des primaryions</h5>
+              <p class="mb-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis beatae perspiciatis distinctio praesentium quaerat doloremque accusamus atque. Voluptas, tenetur facere. 
+                            </p>
+              <a
+                href="#"
+                class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2"
+                >Lire Plus</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp"
+        data-wow-delay="0.5s"
+      >
+        <div class="service-item rounded">
+          <div class="service-img rounded-top">
+            <img
+              src="{% static 'images/service.jpg'%}"
+              class="img-fluid rounded-top w-100"
+              alt=""
+            />
+          </div>
+          <div class="service-content rounded-bottom bg-light p-4">
+            <div class="service-content-inner">
+              <h5 class="mb-4">Conseil et Accompagnement </h5>
+              <p class="mb-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis beatae perspiciatis distinctio praesentium quaerat doloremque accusamus atque. Voluptas, tenetur facere.
+              </p>
+              <a
+                href="#"
+                class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2"
+                >Lire Plus</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp"
+        data-wow-delay="0.7s"
+      >
+        <div class="service-item rounded">
+          <div class="service-img rounded-top">
+            <img
+              src="{% static 'images/service.jpg'%}"
+              class="img-fluid rounded-top w-100"
+              alt=""
+            />
+          </div>
+          <div class="service-content rounded-bottom bg-light p-4">
+            <div class="service-content-inner">
+              <h5 class="mb-4">Évaluation Immobilière</h5>
+              <p class="mb-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis beatae perspiciatis distinctio praesentium quaerat doloremque accusamus atque. Voluptas, tenetur facere.                  </p>
+              <a
+                href="#"
+                class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2"
+                >Lire Plus</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.2s">
+        <a
+          class="btn btn-primary rounded-pill text-white py-3 px-5"
+          href="#"
+          >Voir Plus</a
+        >
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Services End -->
+
+
+
+
+
+
+<div
+  class="modal fade"
+  id="videoModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content rounded-0">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <!-- 16:9 aspect ratio -->
+        <div class="ratio ratio-16x9">
+          <iframe
+            class="embed-responsive-item"
+            src=""
+            id="video"
+            allowfullscreen
+            allowscriptaccess="always"
+            allow="autoplay"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Book Appointment End -->
+
+<!-- Team Start -->
+<div class="container-fluid team py-5">
+  <div class="container py-5">
+    <div class="section-title mb-5 wow fadeInUp" data-wow-delay="0.1s">
+      <div class="sub-style">
+        <h4 class="sub-title px-3 mb-0">Chambre des notaires</h4>
+      </div>
+      <h1 class="display-3 mb-4">
+        les membres du bureau de la chambre  des notaires
+      </h1>
+      <p class="mb-0">
+        La Chambre des notaires est l’ordre professionnel qui encadre et régit la pratique notariale au Togo. Elle joue un rôle essentiel dans la protection du public et la promotion de l’exercice préventif du droit
+      </p>
+    </div>
+    <div class="row g-4 justify-content-center">
+      <div
+        class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
+        data-wow-delay="0.1s"
+      >
+        <div class="team-item rounded">
+          <div class="team-img rounded-top h-100">
+            <img
+              src="{% static 'images/personne1.jpg' %}"
+              class="img-fluid rounded-top w-100"
+              alt=""
+            />
+            <div class="team-icon d-flex justify-content-center">
+              <a
+                class="btn btn-square btn-primary text-white rounded-circle mx-1"
+                href=""
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                class="btn btn-square btn-primary text-white rounded-circle mx-1"
+                href=""
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                class="btn btn-square btn-primary text-white rounded-circle mx-1"
+                href=""
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                class="btn btn-square btn-primary text-white rounded-circle mx-1"
+                href=""
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div
+            class="team-content text-center border border-primary border-top-0 rounded-bottom p-4"
+          >
+            <h5>Nom</h5>
+            <p class="mb-0">Email</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
+        data-wow-delay="0.3s"
+      >
+        <div class="team-item rounded">
+          <div class="team-img rounded-top h-100">
+            <img
+              src="{% static 'images/personne1.jpg' %}"
+              class="img-fluid rounded-top w-100"
+              alt=""
+            />
+            <div class="team-icon d-flex justify-content-center">
+              <a
+                class="btn btn-square btn-primary text-white rounded-circle mx-1"
+                href=""
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                class="btn btn-square btn-primary text-white rounded-circle mx-1"
+                href=""
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                class="btn btn-square btn-primary text-white rounded-circle mx-1"
+                href=""
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                class="btn btn-square btn-primary text-white rounded-circle mx-1"
+                href=""
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div
+            class="team-content text-center border border-primary border-top-0 rounded-bottom p-4"
+          >
+            <h5>Nom</h5>
+            <p class="mb-0">Email</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
+        data-wow-delay="0.5s"
+      >
+        <div class="team-item rounded">
+          <div class="team-img rounded-top h-100">
+            <img
+              src="{% static 'images/personne1.jpg' %}"
+              class="img-fluid rounded-top w-100"
+              alt=""
+            />
+            <div class="team-icon d-flex justify-content-center">
+              <a
+                class="btn btn-square btn-primary text-white rounded-circle mx-1"
+                href=""
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                class="btn btn-square btn-primary text-white rounded-circle mx-1"
+                href=""
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                class="btn btn-square btn-primary text-white rounded-circle mx-1"
+                href=""
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                class="btn btn-square btn-primary text-white rounded-circle mx-1"
+                href=""
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div
+            class="team-content text-center border border-primary border-top-0 rounded-bottom p-4"
+          >
+            <h5>Nom</h5>
+            <p class="mb-0">Email</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
+        data-wow-delay="0.7s"
+      >
+        <div class="team-item rounded">
+          <div class="team-img rounded-top h-100">
+            <img
+              src="{% static 'images/personne1.jpg' %}"
+              class="img-fluid rounded-top w-100"
+              alt=""
+            />
+            <div class="team-icon d-flex justify-content-center">
+              <a
+                class="btn btn-square btn-primary text-white rounded-circle mx-1"
+                href=""
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                class="btn btn-square btn-primary text-white rounded-circle mx-1"
+                href=""
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                class="btn btn-square btn-primary text-white rounded-circle mx-1"
+                href=""
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                class="btn btn-square btn-primary text-white rounded-circle mx-1"
+                href=""
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div
+            class="team-content text-center border border-primary border-top-0 rounded-bottom p-4"
+          >
+            <h5>Nom</h5>
+            <p class="mb-0">Email</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Team End -->
+
+
+
+<!-- Blog Start -->
+<div class="container-fluid blog py-5">
+  <div class="container py-5">
+    <div class="section-title mb-5 wow fadeInUp" data-wow-delay="0.1s">
+      <div class="sub-style">
+        <h4 class="sub-title px-3 mb-0">Actualités</h4>
+      </div>
+      <h1 class="display-3 mb-4">
+Actualités & Activités    
+</h1>
+      <p class="mb-0">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+        deleniti amet at atque sequi quibusdam cumque itaque repudiandae
+        temporibus, eius nam mollitia voluptas maxime veniam necessitatibus
+        saepe in ab? Repellat!
+      </p>
+    </div>
+    <div class="row g-4 justify-content-center">
+      <div
+        class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp"
+        data-wow-delay="0.1s"
+      >
+        <div class="blog-item rounded">
+          <div class="blog-img">
+            <img src="{% static 'images/actualité.jpg' %}" class="img-fluid w-100" alt="Image" />
+          </div>
+          <div class="blog-centent p-4">
+            <div class="d-flex justify-content-between mb-4">
+              <p class="mb-0 text-muted">
+                <i class="fa fa-calendar-alt text-primary"></i> 01 Jan 2045
+              </p>
+              <a href="#" class="text-muted"
+                ><span class="fa fa-comments text-primary"></span> 3
+                Comments</a
+              >
+            </div>
+            <a href="#" class="h4"
+              >Remove back Pain While Working on o physio</a
+            >
+            <p class="my-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium hic consequatur beatae architecto,
+            </p>
+            <a
+              href="#"
+              class="btn btn-primary rounded-pill text-white py-2 px-4 mb-1"
+              >Lire Plus</a
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp"
+        data-wow-delay="0.3s"
+      >
+        <div class="blog-item rounded">
+          <div class="blog-img">
+            <img src="{% static 'images/actualité.jpg' %}" class="img-fluid w-100" alt="Image" />
+          </div>
+          <div class="blog-centent p-4">
+            <div class="d-flex justify-content-between mb-4">
+              <p class="mb-0 text-muted">
+                <i class="fa fa-calendar-alt text-primary"></i> 01 Jan 2045
+              </p>
+              <a href="#" class="text-muted"
+                ><span class="fa fa-comments text-primary"></span> 3
+                Comments</a
+              >
+            </div>
+            <a href="#" class="h4"
+              >Benefits of a weekly physiotherapy session</a
+            >
+            <p class="my-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium hic consequatur beatae architecto,
+            </p>
+            <a
+              href="#"
+              class="btn btn-primary rounded-pill text-white py-2 px-4 mb-1"
+              >Lire Plus</a
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp"
+        data-wow-delay="0.5s"
+      >
+        <div class="blog-item rounded">
+          <div class="blog-img">
+            <img src="{% static 'images/actualité.jpg' %}" class="img-fluid w-100" alt="Image" />
+          </div>
+          <div class="blog-centent p-4">
+            <div class="d-flex justify-content-between mb-4">
+              <p class="mb-0 text-muted">
+                <i class="fa fa-calendar-alt text-primary"></i> 01 Jan 2045
+              </p>
+              <a href="#" class="text-muted"
+                ><span class="fa fa-comments text-primary"></span> 3
+                Comments</a
+              >
+            </div>
+            <a href="#" class="h4"
+              >Regular excercise can slow ageing process</a
+            >
+            <p class="my-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium hic consequatur beatae architecto,
+            </p>
+            <a
+              href="#"
+              class="btn btn-primary rounded-pill text-white py-2 px-4 mb-1"
+              >Lire Plus</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Blog End -->
+
+    <!-- Section Actualités -->
+    <section class="news-section py-5">
+        <h2 class="text-center mb-4">Dernières actualités</h2>
+        <div class="row">
+            {% for news in latest_news %}
+            <div class="col-md-4 mb-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ news.title }}</h5>
+                        <p class="card-text">{{ news.content|truncatewords:20 }}</p>
+                        <a href="#" class="btn btn-link">Lire la suite</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Publié le {{ news.date|date:"d F Y" }}
+                    </div>
+                </div>
+            </div>
+            {% empty %}
+            <p class="text-center">Aucune actualité pour le moment.</p>
+            {% endfor %}
+        </div>
+    </section>
+
+    
+</div>
+{% endblock %}

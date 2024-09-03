@@ -1,0 +1,97 @@
+{% extends "chambre/base.html" %}
+
+
+#Tag static
+{% load static %}
+
+{% static 'static/css/membres.css' as css_file %}
+
+<link rel="stylesheet" type="text/css" href="{{ css_file }}">
+
+#_____________------------------
+
+
+
+# Balise pour referencer les fichiers static
+{% load static %}
+<link href="{% static 'css/style.css' %}" rel="stylesheet">
+<script src="{% static 'js/main.js' %}"></script>
+<img src="{% static 'images/logo.png' %}" alt="Logo">
+
+
+{% block title %}Membres de la Chambre des Notaires du Togo{% endblock %}
+
+{% block content %}
+<div class="container-fluid team py-5">
+
+    <div class="container py-5">
+        <div class="input-group my-2 col-auto">
+            <form method="get" class="form-control">
+                <div class="input-group">
+                    {{ form.search_query }}
+                    <div class="input-group-append">
+                        <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i
+                            ></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    {% if membres %}
+    <div class="row g-4 justify-content-center">
+        {% for membre in membres %}
+        <div
+          class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
+          data-wow-delay="0.1s"
+        >
+          <div class="team-item rounded">
+            <div class="team-img rounded-top h-100">
+                {% if membre.photo %}
+              <img
+                src="{{ membre.photo.url }}"
+                class="card-img-top"
+                alt=""
+              />
+                {% else %}
+                <img src="{% static 'images/default_profile.png' %}" class="card-img-top" alt="Photo de profil par défaut">
+                {% endif %}
+              <div class="team-icon d-flex justify-content-center">
+                <a
+                  class="btn btn-square btn-primary text-white rounded-circle mx-1"
+                  href=""
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a
+                  class="btn btn-square btn-primary text-white rounded-circle mx-1"
+                  href=""
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a
+                  class="btn btn-square btn-primary text-white rounded-circle mx-1"
+                  href=""
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  class="btn btn-square btn-primary text-white rounded-circle mx-1"
+                  href=""
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+            <div
+              class="team-content text-center border border-primary border-top-0 rounded-bottom p-4"
+            >
+              <h5>{{ membre.nom }} {{ membre.prenom }}</h5>
+              <p class="mb-0">Email :{{ membre.email }}</p>
+              <p class="mb-0">Tel :{{ membre.telephone }}</p>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% else %}
+        <p>Aucun membre trouvé.</p>
+    {% endif %}
+</div>
+{% endblock %}
